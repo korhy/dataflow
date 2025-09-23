@@ -1,13 +1,13 @@
 from typing import Dict, Type
 from .abstract_registry import AbstractModelRegistry
-#from .local_registry import LocalModelRegistry
+from .local_registry import LocalModelRegistry
 # import other registries as you add them
 
 class RegistryManager:
     """Manages singleton instances of all registries by name."""
 
     _registry_classes: Dict[str, Type[AbstractModelRegistry]] = {
-        #"local": LocalModelRegistry,
+        "local": LocalModelRegistry,
         # "mlflow": MLflowRegistry,
         # "bigquery": BigQueryRegistry,
         # etc.
