@@ -4,7 +4,7 @@ from .registry_manager import RegistryManager
 import mlflow
 from mlflow.tracking import MlflowClient
 
-class MLflowRegistry(AbstractModelRegistry, metaclass=SingletonABCMeta):
+class MLflowModelRegistry(AbstractModelRegistry, metaclass=SingletonABCMeta):
     """A placeholder for MLflow-based model registry."""
 
     def __init__(self, *args, **kwargs):
